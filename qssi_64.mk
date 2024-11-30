@@ -326,6 +326,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 #for low ram targets
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+#CustomerCarrierConfig
+$(call inherit-product-if-exists, vendor/fairphone/source/apps/CustomerCarrierConfig/Customer_Carrier.mk)
+
 ###################################################################################
 # This is the End of target.mk file.
 # Now, Pickup other split product.mk files:
