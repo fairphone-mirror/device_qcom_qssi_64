@@ -16,7 +16,8 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 # Set network mode to (NR_LTE_TDSCDMA_CDMA_EVDO_GSM_WCDMA, NR_LTE_TDSCDMA_CDMA_EVDO_GSM_WCDMA) for 8+8 mode device on DSDS mode
-ro.telephony.default_network=33,33
+#Modify by zhangrenjie [FPS-235]Device is defaulted to NR_LTE_WCDMA_GSM
+ro.telephony.default_network=26,26
 
 dalvik.vm.heapsize=36m
 dalvik.vm.dex2oat64.enabled=true
