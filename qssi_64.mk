@@ -301,6 +301,9 @@ endif
 
 PRODUCT_PACKAGES += MyFairPhone
 
+PRODUCT_PACKAGES += FAIRPHONE.html.gz
+PRODUCT_PACKAGES += FAIRPHONE.png
+
 PRODUCT_COPY_FILES += \
     device/qcom/qssi/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
 
