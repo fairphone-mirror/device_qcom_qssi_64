@@ -254,12 +254,20 @@ PRODUCT_PACKAGES += \
     vendor.qti.power.pasrmanager@1.0-impl \
     pasrservice
 
+PRODUCT_COPY_FILES += \
+frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
+
+PRODUCT_PACKAGES += EuiccGoogle FPEuiccOverlay
+
 #Enable sysrilcmd
 PRODUCT_PACKAGES += \
                     qcrilhook \
                     qcrilhook.xml \
                     sysrilcmd \
                     sysrilcmd.xml
+
+PRODUCT_PACKAGES += EuiccOverlay
+PRODUCT_PACKAGES += SetupWizardOverlay
 
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
@@ -337,6 +345,8 @@ $(call inherit-product, packages/modules/Virtualization/build/apex/product_packa
 
 #CustomerCarrierConfig
 $(call inherit-product-if-exists, vendor/fairphone/source/apps/CustomerCarrierConfig/Customer_Carrier.mk)
+
+$(call inherit-product-if-exists, vendor/fairphone/source/apps/customer_carrier/customer_carrier.mk)
 
 ###################################################################################
 # This is the End of target.mk file.
