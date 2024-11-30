@@ -299,6 +299,11 @@ else
 AUDIO_FEATURE_ENABLED_DLKM := false
 endif
 
+PRODUCT_PACKAGES += MyFairPhone
+
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
+
 # Enable virtual A/B compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
