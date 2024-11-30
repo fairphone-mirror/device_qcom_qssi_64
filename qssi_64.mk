@@ -254,6 +254,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.power.pasrmanager@1.0-impl \
     pasrservice
 
+#Enable sysrilcmd
+PRODUCT_PACKAGES += \
+                    qcrilhook \
+                    qcrilhook.xml \
+                    sysrilcmd \
+                    sysrilcmd.xml
+
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
@@ -304,7 +311,7 @@ PRODUCT_PACKAGES += FAIRPHONE.html.gz
 PRODUCT_PACKAGES += FAIRPHONE.png
 
 PRODUCT_COPY_FILES += \
-    device/qcom/qssi/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
+    device/qcom/qssi_64/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
 
 # Enable virtual A/B compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
