@@ -214,6 +214,11 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/
 #audio related module
 PRODUCT_PACKAGES += libvolumelistener
 
+PRODUCT_COPY_FILES += device/qcom/qssi_64/google_clientidbase_config/google_clientidbase.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/google_clientidbase.rc
+
+#PlayAutoInstallStub
+PRODUCT_PACKAGES += PlayAutoInstallStub
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
