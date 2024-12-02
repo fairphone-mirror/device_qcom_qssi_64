@@ -202,6 +202,11 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += bootctl
 endif
 
+PRODUCT_PACKAGES += \
+    libFaceDetectCA \
+    libanc_faceid \
+    libanc_faceid_jni
+
 #Healthd packages
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl \
