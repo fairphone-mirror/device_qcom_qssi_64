@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += SetupWizardOverlay
 
 #ThemePicker permissions
 PRODUCT_COPY_FILES +=\
-device/qcom/qssi/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
+device/qcom/qssi_64/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
 #ThemePicker
 PRODUCT_PACKAGES += ThemePicker
 PRODUCT_PACKAGES += ThemesStub
