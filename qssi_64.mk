@@ -219,6 +219,11 @@ PRODUCT_COPY_FILES += device/qcom/qssi_64/google_clientidbase_config/google_clie
 #PlayAutoInstallStub
 PRODUCT_PACKAGES += PlayAutoInstallStub
 
+PRODUCT_COPY_FILES += \
+frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
+
+PRODUCT_PACKAGES += EuiccGoogle
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
