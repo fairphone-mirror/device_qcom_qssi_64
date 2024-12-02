@@ -274,6 +274,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += EuiccOverlay
 PRODUCT_PACKAGES += SetupWizardOverlay
 
+#ThemePicker permissions
+PRODUCT_COPY_FILES +=\
+device/qcom/qssi/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
+#ThemePicker
+PRODUCT_PACKAGES += ThemePicker
+PRODUCT_PACKAGES += ThemesStub
+
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
