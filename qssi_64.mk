@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += PlayAutoInstallStub
 PRODUCT_COPY_FILES += \
 frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
 
-PRODUCT_PACKAGES += EuiccGoogle
+PRODUCT_PACKAGES += EuiccGoogle FPEuiccOverlay
 
 # Display/Graphics
 PRODUCT_PACKAGES += \
