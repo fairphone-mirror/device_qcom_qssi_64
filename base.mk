@@ -682,7 +682,6 @@ PRODUCT_PACKAGES := \
     Music \
     netutils-wrapper-1.0 \
     Provision \
-    Protips \
     QuickSearchBox \
     Settings \
     Sync \
