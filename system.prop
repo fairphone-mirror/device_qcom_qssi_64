@@ -176,3 +176,5 @@ ro.support_one_handed_mode=true
 #Modify by renjie.zhang  [GCF_FT]F51_3 IPv6 Privacy Extension verification
 persist.vendor.data.profile_update=true
 
+#add client id base
+ro.com.google.clientidbase=android-alcatel
