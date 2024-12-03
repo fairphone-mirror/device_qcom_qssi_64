@@ -339,6 +339,15 @@ PRODUCT_PACKAGES += FAIRPHONE.png
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
 
+PRODUCT_PACKAGES += \
+      smcd
+
+ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
+PRODUCT_PACKAGES += OneTouchFeedback
+else
+PRODUCT_PACKAGES += OneTouchFeedback_stub
+endif
+
 # Enable virtual A/B compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
