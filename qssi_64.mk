@@ -332,6 +332,8 @@ AUDIO_FEATURE_ENABLED_DLKM := false
 endif
 
 PRODUCT_PACKAGES += MyFairPhone
+PRODUCT_PACKAGES += FairphoneActivator
+PRODUCT_PACKAGES += privapp_permissions_FairphoneActivator
 
 PRODUCT_PACKAGES += FAIRPHONE.html.gz
 PRODUCT_PACKAGES += FAIRPHONE.png
