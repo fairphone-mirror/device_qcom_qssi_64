@@ -464,3 +464,6 @@ $(call inherit-product-if-exists, vendor/fairphone/apps/fps-apps.mk)
 #+ FPS-53. Disable Android's rescue party. xuguang.yang. 20250218
 PRODUCT_SYSTEM_EXT_PROPERTIES += persist.sys.disable_rescue=true
 #- FPS-53. Disable Android's rescue party. xuguang.yang. 20230218
+
+# Inherit the proprietary setup
+$(call inherit-product, device/fairphone/fp6-proprietary/device-vendor.mk)
