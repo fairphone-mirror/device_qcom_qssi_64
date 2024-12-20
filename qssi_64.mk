@@ -263,15 +263,6 @@ PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-service_64
 PRODUCT_COPY_FILES += \
       device/qcom/qssi_64/splash/bootanimation.zip:system/media/bootanimation.zip
 
-ifneq ($(TARGET_BUILD_MMITEST),true)
-$(call inherit-product-if-exists, vendor/partner_gms/products/gms_eea_v2_type4c.mk)
-#Toggle between all optional modules or individual modules to prevent double include
-MAINLINE_INCLUDE_ALL_OPTIONAL_MODULES := true
-#MAINLINE_INCLUDE_RKPD_MODULE := true
-#MAINLINE_INCLUDE_UWB_MODULE := true
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
-endif
-
 ifeq ($(TARGET_BUILD_MMITEST),true)
 PRODUCT_PACKAGES += Dialer
 endif
