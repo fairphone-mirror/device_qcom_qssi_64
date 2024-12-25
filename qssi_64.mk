@@ -140,8 +140,16 @@ TARGET_USES_QCOM_BSP := false
 # RRO configuration
 TARGET_USES_RRO := true
 
-TARGET_USES_NQ_NFC := true
+TARGET_USES_NQ_NFC := false
 
+BOARD_USES_SAMSUNG_NFC := true
+ifeq ($(BOARD_USES_SAMSUNG_NFC), true)
+    PRODUCT_PACKAGES += \
+        libnfc-nci \
+        libnfc_nci_jni \
+        NfcNci \
+        Tag
+endif
 
 # default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
