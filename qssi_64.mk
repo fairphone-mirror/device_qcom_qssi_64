@@ -403,3 +403,5 @@ $(call inherit-product-if-exists, vendor/fairphone/source/apps/customer_carrier/
 ###################################################################################
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 ###################################################################################
+
+$(call inherit-product, device/fairphone/common/common_qssi.mk)
