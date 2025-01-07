@@ -268,6 +268,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
+#Begin added by juting.huang for cameraalgoservice
+PRODUCT_SYSTEM_PROPERTIES += persist.vendor.camera.fprom=1
+#End added by juting.huang for cameraalgoservice
+
 # USB default HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
