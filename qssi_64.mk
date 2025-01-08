@@ -252,6 +252,9 @@ PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-impl
 # Enable binderized camera HAL
 PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-service_64
 
+#MMITest
+PRODUCT_PACKAGES += MMITest
+
 
 # Context hub HAL
 PRODUCT_PACKAGES += \
