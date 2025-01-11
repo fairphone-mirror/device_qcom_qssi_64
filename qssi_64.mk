@@ -252,6 +252,10 @@ PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-impl
 # Enable binderized camera HAL
 PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-service_64
 
+ifneq ($(TARGET_BUILD_MMITEST),true)
+$(call inherit-product, vendor/partner_gms/products/gms_eea_v2_type4c.mk)
+endif
+
 #MMITest
 PRODUCT_PACKAGES += MMITest
 
