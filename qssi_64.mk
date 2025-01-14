@@ -262,6 +262,14 @@ endif
 #MMITest
 PRODUCT_PACKAGES += MMITest
 
+ifeq ($(TARGET_BUILD_MMITEST),true)
+# Robust
+PRODUCT_PACKAGES += \
+    Robust \
+    robustd \
+    memtester
+endif
+
 
 # Context hub HAL
 PRODUCT_PACKAGES += \
