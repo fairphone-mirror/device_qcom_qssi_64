@@ -359,15 +359,18 @@ else
 AUDIO_FEATURE_ENABLED_DLKM := false
 endif
 
+ifneq ($(TARGET_BUILD_MMITEST),true)
 PRODUCT_PACKAGES += MyFairPhone
 PRODUCT_PACKAGES += FairphoneActivator
 PRODUCT_PACKAGES += privapp_permissions_FairphoneActivator
+
 
 PRODUCT_PACKAGES += FAIRPHONE.html.gz
 PRODUCT_PACKAGES += FAIRPHONE.png
 
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
+endif
 
 PRODUCT_PACKAGES += \
       smcd
