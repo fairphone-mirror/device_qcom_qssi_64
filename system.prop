@@ -177,4 +177,4 @@ ro.support_one_handed_mode=true
 persist.vendor.data.profile_update=true
 
 #add client id base
-ro.com.google.clientidbase=android-alcatel
+ro.com.google.clientidbase=android-fairphone
