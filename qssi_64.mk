@@ -265,6 +265,10 @@ MAINLINE_INCLUDE_ALL_OPTIONAL_MODULES := true
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
 endif
 
+ifeq ($(TARGET_BUILD_MMITEST),true)
+PRODUCT_PACKAGES += Dialer
+endif
+
 #MMITest
 PRODUCT_PACKAGES += MMITest
 
