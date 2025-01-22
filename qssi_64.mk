@@ -89,6 +89,12 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 endif
 #### Dynamic Partition Handling
 
+ifeq ($(BUILD_WITH_RELEASEKEY),true)
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/vbmeta_system_rsa4096.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
+$(call inherit-product, vendor/fairphone/release-keys/fairphone_certificate.mk)
+endif
+
 PRODUCT_PRODUCT_PROPERTIES += \
     remote_provisioning.enable_rkpd=true \
     remote_provisioning.hostname=remoteprovisioning.googleapis.com \
