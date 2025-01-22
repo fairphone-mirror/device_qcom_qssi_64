@@ -47,6 +47,10 @@ INTERNAL_BUILDTOOLS_PACKAGE_FILES := \
   vendor/qcom/opensource/core-utils/build/build.sh \
   $(BUILD_IMAGE_STANDALONE_SCRIPT_PATH)
 
+ifeq ($(BUILD_WITH_RELEASEKEY),true)
+INTERNAL_BUILDTOOLS_PACKAGE_FILES += $(FAIRPHONE_CERTIFICATE_PATH)/certificate/security
+endif # BUILD_WITH_RELEASEKEY
+
 # Pick the default java jdk used by build system
 INTERNAL_BUILDTOOLS_PACKAGE_JAVA_PREBUILT := $(JAVA_HOME)
 
