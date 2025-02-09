@@ -407,6 +407,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
       smcd
 
+PRODUCT_PACKAGES += FPCamera
 ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
 PRODUCT_PACKAGES += OneTouchFeedback
 else
