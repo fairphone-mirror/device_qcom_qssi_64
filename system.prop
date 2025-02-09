@@ -178,3 +178,10 @@ persist.vendor.data.profile_update=true
 
 #add client id base
 ro.com.google.clientidbase=android-fairphone
+
+#OEM authority and certificate
+oem_trusted_authority=com.android.camera.custom.cameramoduleprovider
+oem_trusted_certificate=514A3D615EFAA1DD2F38C6C50EBADD21B9ECEF1F
+
+#Enable google lens for fps camera
+ro.com.google.lens.oem_camera_package=com.fps.camera
