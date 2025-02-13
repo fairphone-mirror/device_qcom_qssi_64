@@ -409,6 +409,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += FPCamera
 ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
+PRODUCT_PACKAGES += CameraCalibrate
+PRODUCT_PACKAGES += MTFCamera
+endif
+
+ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
 PRODUCT_PACKAGES += OneTouchFeedback
 else
 PRODUCT_PACKAGES += OneTouchFeedback_stub
