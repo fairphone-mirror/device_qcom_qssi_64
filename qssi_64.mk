@@ -334,14 +334,32 @@ PRODUCT_PACKAGES += SetupWizardOverlay
 
 # default permissions for wallpaper
 PRODUCT_COPY_FILES += \
-    device/qcom/qssi_64/default-permissions-wallpaper.xml:system_ext/etc/default-permissions/default-permissions-wallpaper.xml
+    device/qcom/qssi_64/default-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-wallpaper.xml
 
 #ThemePicker permissions
 PRODUCT_COPY_FILES +=\
-device/qcom/qssi_64/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
+    device/qcom/qssi_64/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
 #ThemePicker
 PRODUCT_PACKAGES += ThemePicker
 PRODUCT_PACKAGES += ThemesStub
+
+
+# default permissions for MyFairphone project apps
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_64/default-permissions-myfairphone.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-myfairphone.xml
+
+#privapp permissions for MyFairphone project apps
+PRODUCT_COPY_FILES +=\
+    device/qcom/qssi_64/privapp-permissions-myfairphone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-myfairphone.xml
+
+#SpringLauncherApp
+PRODUCT_PACKAGES += SpringLauncherApp
+
+#SpringLauncher
+PRODUCT_PACKAGES += SpringLauncherCore
+
+#SwitchButtonSettings
+PRODUCT_PACKAGES += SwitchButtonSettings
 
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
