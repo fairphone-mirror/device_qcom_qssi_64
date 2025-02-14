@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+  <!-- FP Spring - Switch Button Settings -->
+  <exception package="com.fairphone.settings.switchbutton">
+    <permission name="android.permission.ACCESS_NOTIFICATION_POLICY" whitelisted="true"/>
+  </exception>
+
+  <!-- FP Spring - Spring Launcher Core -->
+  <exception package="com.fairphone.spring.core">
+    <permission name="android.permission.SYSTEM_ALERT_WINDOW" whitelisted="true"/>
+  </exception>
+
+  <!-- FP Spring - Spring Launcher -->
+  <exception package="com.fairphone.spring.launcher">
+    <permission name="android.permission.SYSTEM_ALERT_WINDOW" whitelisted="true"/>
+  </exception>
+</exceptions>
+
