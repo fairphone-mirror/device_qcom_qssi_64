@@ -478,3 +478,7 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 ###################################################################################
 
 $(call inherit-product, device/fairphone/common/common_qssi.mk)
+
+#+ FPS-53. Disable Android's rescue party. xuguang.yang. 20250218
+PRODUCT_SYSTEM_EXT_PROPERTIES += persist.sys.disable_rescue=true
+#- FPS-53. Disable Android's rescue party. xuguang.yang. 20230218
