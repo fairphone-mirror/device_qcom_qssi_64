@@ -185,3 +185,5 @@ oem_trusted_certificate=514A3D615EFAA1DD2F38C6C50EBADD21B9ECEF1F
 
 #Enable google lens for fps camera
 ro.com.google.lens.oem_camera_package=com.fps.camera
+
+ro.audio.monitorRotation=true
