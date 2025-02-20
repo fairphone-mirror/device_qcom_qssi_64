@@ -1,0 +1,11 @@
+//MMITest Tprawdata
+cc_prebuilt_binary {
+    name: "eswin_test",
+    shared_libs: ["liblog","libstdc++"],
+    srcs: [
+        "eswin/eswin_test"
+    ],
+    symlinks: [
+        "eswin_test"
+    ],
+}

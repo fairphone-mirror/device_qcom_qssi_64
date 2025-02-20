@@ -285,6 +285,7 @@ endif
 
 #MMITest
 PRODUCT_PACKAGES += MMITest
+PRODUCT_PACKAGES += eswin_test
 
 ifeq ($(TARGET_BUILD_MMITEST),true)
 # Robust
