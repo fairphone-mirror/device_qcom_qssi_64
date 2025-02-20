@@ -435,6 +435,7 @@ PRODUCT_PACKAGES += FPCamera
 ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
 PRODUCT_PACKAGES += CameraCalibrate
 PRODUCT_PACKAGES += MTFCamera
+PRODUCT_PACKAGES += CameraOIS
 endif
 
 ifneq ($(strip $(TARGET_BUILD_VARIANT)),user)
