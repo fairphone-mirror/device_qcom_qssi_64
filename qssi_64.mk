@@ -261,6 +261,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/public.libraries.system_ext-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt
 
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_64/privapp-permissions-google-lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-google-lens.xml
+
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
