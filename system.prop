@@ -168,7 +168,7 @@ arm64.memtag.process.system_server=off
 ro.launcher.blur.appLaunch=0
 
 # Enable FMD mode
-ro.bluetooth.finder.supported=true
+#ro.bluetooth.finder.supported=true
 
 #open one handed mode
 ro.support_one_handed_mode=true
