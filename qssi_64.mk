@@ -423,9 +423,6 @@ PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
 endif
 
-PRODUCT_COPY_FILES += \
-    device/qcom/qssi_64/privapp-permissions-google-lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-google-lens.xml
-
 #Begin added by juting.huang for cameraalgoservice
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/public.libraries.system_ext-tct.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-tct.txt
