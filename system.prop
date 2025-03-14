@@ -183,6 +183,9 @@ ro.com.google.clientidbase=android-fairphone
 oem_trusted_authority=com.android.camera.custom.cameramoduleprovider
 oem_trusted_certificate=514A3D615EFAA1DD2F38C6C50EBADD21B9ECEF1F
 
+#Modify by shaopan.tang 2021-07-21 FPS-1233 esim removed after factory reset
+masterclear.allow_retain_esim_profiles_after_fdr=1
+
 #Enable google lens for fps camera
 ro.com.google.lens.oem_camera_package=com.fps.camera
 
