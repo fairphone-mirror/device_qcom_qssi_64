@@ -277,11 +277,12 @@ endif
 
 ifeq ($(TARGET_BUILD_MMITEST),true)
 PRODUCT_PACKAGES += Dialer
+endif
+
 #+FPS-628 add by xuguang.yang for RKP
 PRODUCT_PACKAGES += rkp_factory_extraction_tool
 PRODUCT_SYSTEM_EXT_PROPERTIES += vendor.wv.oemcrypto.debug.enable_prov40=true
 #-FPS-628
-endif
 
 #MMITest
 PRODUCT_PACKAGES += MMITest
