@@ -350,23 +350,6 @@ PRODUCT_PACKAGES += ThemePicker
 PRODUCT_PACKAGES += ThemesStub
 
 
-# default permissions for MyFairphone project apps
-PRODUCT_COPY_FILES += \
-    device/qcom/qssi_64/default-permissions-myfairphone.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-myfairphone.xml
-
-#privapp permissions for MyFairphone project apps
-PRODUCT_COPY_FILES +=\
-    device/qcom/qssi_64/privapp-permissions-myfairphone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-myfairphone.xml
-
-#SpringLauncherApp
-PRODUCT_PACKAGES += SpringLauncherApp
-
-#SpringLauncher
-PRODUCT_PACKAGES += SpringLauncherCore
-
-#SwitchButtonSettings
-PRODUCT_PACKAGES += SwitchButtonSettings
-
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
@@ -412,16 +395,10 @@ AUDIO_FEATURE_ENABLED_DLKM := false
 endif
 
 ifneq ($(TARGET_BUILD_MMITEST),true)
-PRODUCT_PACKAGES += MyFairPhone
-PRODUCT_PACKAGES += FairphoneActivator
-PRODUCT_PACKAGES += privapp_permissions_FairphoneActivator
-
 
 PRODUCT_PACKAGES += FAIRPHONE.html.gz
 PRODUCT_PACKAGES += FAIRPHONE.png
 
-PRODUCT_COPY_FILES += \
-    device/qcom/qssi_64/default-permissions-myfairphone.xml:system_ext/etc/default-permissions/default-permissions-myfairphone.xml
 endif
 
 #Begin added by juting.huang for cameraalgoservice
@@ -488,6 +465,8 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 ###################################################################################
 
 $(call inherit-product, device/fairphone/common/common_qssi.mk)
+# Fairphone apps
+$(call inherit-product-if-exists, vendor/fairphone/apps/fps-apps.mk)
 
 #+ FPS-53. Disable Android's rescue party. xuguang.yang. 20250218
 PRODUCT_SYSTEM_EXT_PROPERTIES += persist.sys.disable_rescue=true
