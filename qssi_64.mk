@@ -339,10 +339,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += EuiccOverlay
 PRODUCT_PACKAGES += SetupWizardOverlay
 
-# default permissions for wallpaper
-PRODUCT_COPY_FILES += \
-    device/qcom/qssi_64/default-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-wallpaper.xml
-
 #ThemePicker permissions
 PRODUCT_COPY_FILES +=\
     device/qcom/qssi_64/privapp-permissions-wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wallpaper.xml
