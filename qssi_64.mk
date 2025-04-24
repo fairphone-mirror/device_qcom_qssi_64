@@ -288,6 +288,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += vendor.wv.oemcrypto.debug.enable_prov40=true
 #MMITest
 PRODUCT_PACKAGES += MMITest
 PRODUCT_PACKAGES += eswin_test
+PRODUCT_PACKAGES += FingerprintTest
 
 ifeq ($(TARGET_BUILD_MMITEST),true)
 # Robust
