@@ -184,6 +184,10 @@ oem_trusted_certificate=514A3D615EFAA1DD2F38C6C50EBADD21B9ECEF1F
 #Modify by shaopan.tang 2021-07-21 FPS-1233 esim removed after factory reset
 masterclear.allow_retain_esim_profiles_after_fdr=1
 
+#Modify by shaopan.tang 2025-04-25 FPS-2103 eSIM OS upgrade
+persist.vendor.esim_os_update_agent=1
+persist.vendor.esim_os_update_name=DeployProd_12A_CSCXNJECISM4_C02212A_V611_ROM.itlc
+
 #Enable google lens for fps camera
 ro.com.google.lens.oem_camera_package=com.fps.camera
 
