@@ -52,5 +52,20 @@ on property:persist.radio.sim.mcc.mnc=26204
 on property:persist.radio.sim.mcc.mnc=26209
     setprop ro.oem.key2 FPS_ClientID_Vodafone_DE
 
+on property:persist.radio.sim.mcc.mnc=23430
+    setprop ro.oem.key2 FPS_ClientID_EE
 
+on property:persist.radio.sim.mcc.mnc=23408
+    setprop ro.oem.key2 FPS_ClientID_EE
 
+on property:persist.radio.sim.mcc.mnc=23431
+    setprop ro.oem.key2 FPS_ClientID_EE
+
+on property:persist.radio.sim.mcc.mnc=23432
+    setprop ro.oem.key2 FPS_ClientID_EE
+
+on property:persist.radio.sim.mcc.mnc=23433
+    setprop ro.oem.key2 FPS_ClientID_EE
+
+on property:persist.radio.sim.mcc.mnc=23486
+    setprop ro.oem.key2 FPS_ClientID_EE
