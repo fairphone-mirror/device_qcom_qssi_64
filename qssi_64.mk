@@ -267,7 +267,7 @@ PRODUCT_COPY_FILES += \
       device/qcom/qssi_64/splash/bootanimation.zip:system/media/bootanimation.zip
 
 ifneq ($(TARGET_BUILD_MMITEST),true)
-$(call inherit-product, vendor/partner_gms/products/gms_eea_v2_type4c.mk)
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms_eea_v2_type4c.mk)
 #Toggle between all optional modules or individual modules to prevent double include
 MAINLINE_INCLUDE_ALL_OPTIONAL_MODULES := true
 #MAINLINE_INCLUDE_RKPD_MODULE := true
@@ -286,7 +286,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += vendor.wv.oemcrypto.debug.enable_prov40=true
 
 #MMITest
 PRODUCT_PACKAGES += MMITest
-PRODUCT_PACKAGES += eswin_test
+#PRODUCT_PACKAGES += eswin_test
 PRODUCT_PACKAGES += FingerprintTest
 
 ifeq ($(TARGET_BUILD_MMITEST),true)
