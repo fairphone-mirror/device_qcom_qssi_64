@@ -394,7 +394,7 @@ endif
 ifneq ($(TARGET_BUILD_MMITEST),true)
 
 PRODUCT_PACKAGES += FAIRPHONE.html.gz
-PRODUCT_PACKAGES += FAIRPHONE.png
+PRODUCT_PACKAGES += fairphone.svg
 
 endif
 
