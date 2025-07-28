@@ -391,6 +391,11 @@ PRODUCT_COPY_FILES += \
     device/qcom/qssi_64/public.libraries.system_ext-tct.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-tct.txt
 #End added by juting.huang for cameraalgoservice
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.hardware.telephony.ims.xml
+
 PRODUCT_PACKAGES += \
       smcd
 
