@@ -192,3 +192,6 @@ persist.vendor.esim_os_update_name=DeployProd_12A_CSCXNJECISM4_C02212A_V611_ROM.
 ro.com.google.lens.oem_camera_package=com.fps.camera
 
 ro.audio.monitorRotation=true
+
+# FPS-2457 CE/FCC wifi parameters
+persist.odm.ccode=other
