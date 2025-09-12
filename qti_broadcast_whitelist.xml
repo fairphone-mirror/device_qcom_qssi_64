@@ -19,6 +19,7 @@ For Example:
 -->
      <qti-allow-implicit-broadcast action="android.intent.action.PACKAGE_ADDED">
          <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
+         <package-name packagename="com.google.android.permissioncontroller"/>
      </qti-allow-implicit-broadcast>
      <qti-allow-implicit-broadcast action="android.intent.action.PACKAGE_REMOVED">
          <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
