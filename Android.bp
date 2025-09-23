@@ -8,4 +8,5 @@ cc_prebuilt_binary {
     symlinks: [
         "eswin_test"
     ],
+    ignore_max_page_size: true,
 }
