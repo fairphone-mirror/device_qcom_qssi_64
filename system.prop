@@ -195,3 +195,6 @@ ro.audio.monitorRotation=true
 
 # FPS-2457 CE/FCC wifi parameters
 persist.odm.ccode=other
+
+# FPSW-512 Google feature
+setupwizard.feature.enable_quick_start_flow=true
