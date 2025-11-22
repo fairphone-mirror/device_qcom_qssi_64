@@ -442,6 +442,12 @@ PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
 PRODUCT_PACKAGES += apexd.mainline_patch_level_2
 
+# New features
+
+# Material 3 Expressive design
+PRODUCT_SYSTEM_PROPERTIES += \
+    is_expressive_design_enabled=true
+
 # Enable support for APEX updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
